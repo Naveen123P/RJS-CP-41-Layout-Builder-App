@@ -1,1 +1,29 @@
 /* Write your CSS here */
+/* Write your CSS here */
+.layout-container {
+  height: 20%;
+  width: 100%;
+  background-color: #475569;
+  padding: 20px;
+  font-family: 'Roboto';
+}
+.layout-heading {
+  color: aliceblue;
+}
+.ul-styles {
+  list-style-type: none;
+}
+.li-styles {
+  display: flex;
+  align-items: center;
+}
+.content-style {
+  margin-left: 10px;
+  color: aliceblue;
+  font-family: 'Roboto';
+}
+@media screen and (min-width: 768px) {
+  .layout-container {
+    padding: 20px 100px;
+  }
+}

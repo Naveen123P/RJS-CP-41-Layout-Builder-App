@@ -29,6 +29,8 @@ class App extends Component {
   }
 
   render() {
+    const {showContent, showLeftNavbar, showRightNavbar} = this.state
+    console.log(showContent, showLeftNavbar, showRightNavbar)
     return (
       <ConfigurationContext.Provider
         value={{

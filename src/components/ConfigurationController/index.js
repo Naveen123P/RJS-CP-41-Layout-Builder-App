@@ -28,27 +28,36 @@ const ConfigurationController = () => (
           <ul className="ul-styles">
             <li className="li-styles">
               <input
+                id="content"
                 type="checkbox"
                 value={showContent}
                 onClick={onClickContent}
               />
-              <p className="content-style">Content</p>
+              <label htmlFor="content" className="content-style">
+                Content
+              </label>
             </li>
             <li className="li-styles">
               <input
+                id="leftNavbar"
                 type="checkbox"
                 value={showLeftNavbar}
                 onClick={onClickLeftNavbar}
               />
-              <p className="content-style">Left Navbar</p>
+              <label htmlFor="leftNavbar" className="content-style">
+                Left Navbar
+              </label>
             </li>
             <li className="li-styles">
               <input
+                id="rightNavbar"
                 type="checkbox"
                 value={showRightNavbar}
                 onClick={onClickRightNavbar}
               />
-              <p className="content-style">Right Navbar</p>
+              <label htmlFor="rightNavbar" className="content-style">
+                Right Navbar
+              </label>
             </li>
           </ul>
         </div>

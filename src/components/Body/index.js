@@ -9,27 +9,18 @@ const Body = () => (
       const leftNavbarStatus = showLeftNavbar ? 'show-left-navbar' : 'hide'
       const contentStatus = showContent ? 'show-content' : 'hide'
       const rightNavbarStatus = showRightNavbar ? 'show-right-navbar' : 'hide'
+      console.log(showContent, showLeftNavbar, showRightNavbar)
 
       return (
         <div className="body-container">
           <div className={leftNavbarStatus}>
-            <h1 className="heading">
-              Left Navbar Menu
-              <ul className="left-navbar-ul">
-                <li>
-                  <p>Item 1</p>
-                </li>
-                <li>
-                  <p>Item 2</p>
-                </li>
-                <li>
-                  <p>Item 3</p>
-                </li>
-                <li>
-                  <p>Item 4</p>
-                </li>
-              </ul>
-            </h1>
+            <h1 className="heading">Left Navbar Menu</h1>
+            <ul className="left-navbar-ul">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 4</li>
+            </ul>
           </div>
           <div className={contentStatus}>
             <h1 className="heading">Content</h1>

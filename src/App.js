@@ -8,7 +8,7 @@ import './App.css'
 import ConfigurationContext from './context/ConfigurationContext'
 
 class App extends Component {
-  state = {showContent: true, showLeftNavbar: true, showRightNavbar: true}
+  state = {showContent: false, showLeftNavbar: false, showRightNavbar: false}
 
   onToggleShowContent = () => {
     this.setState(prevState => ({

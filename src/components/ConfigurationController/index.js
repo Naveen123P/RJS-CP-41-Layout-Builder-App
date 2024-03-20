@@ -23,43 +23,45 @@ const ConfigurationController = () => (
         onToggleShowRightNavbar()
       }
       return (
-        <div className="layout-container">
+        <div className="layout-container ul-styles">
           <h1 className="layout-heading">Layout</h1>
-          <ul className="ul-styles">
-            <li className="li-styles">
-              <input
-                id="content"
-                type="checkbox"
-                value={showContent}
-                onClick={onClickContent}
-              />
-              <label htmlFor="content" className="content-style">
-                Content
-              </label>
-            </li>
-            <li className="li-styles">
-              <input
-                id="leftNavbar"
-                type="checkbox"
-                value={showLeftNavbar}
-                onClick={onClickLeftNavbar}
-              />
-              <label htmlFor="leftNavbar" className="content-style">
-                Left Navbar
-              </label>
-            </li>
-            <li className="li-styles">
-              <input
-                id="rightNavbar"
-                type="checkbox"
-                value={showRightNavbar}
-                onClick={onClickRightNavbar}
-              />
-              <label htmlFor="rightNavbar" className="content-style">
-                Right Navbar
-              </label>
-            </li>
-          </ul>
+
+          <div className="li-styles">
+            <input
+              id="content"
+              type="checkbox"
+              key={showContent}
+              checked={showContent}
+              onClick={onClickContent}
+            />
+            <label htmlFor="content" className="content-style">
+              Content
+            </label>
+          </div>
+          <div className="li-styles">
+            <input
+              id="leftNavbar"
+              type="checkbox"
+              checked={showLeftNavbar}
+              key={showLeftNavbar}
+              onClick={onClickLeftNavbar}
+            />
+            <label htmlFor="leftNavbar" className="content-style">
+              Left Navbar
+            </label>
+          </div>
+          <div className="li-styles">
+            <input
+              id="rightNavbar"
+              type="checkbox"
+              key={showRightNavbar}
+              checked={showRightNavbar}
+              onClick={onClickRightNavbar}
+            />
+            <label htmlFor="rightNavbar" className="content-style">
+              Right Navbar
+            </label>
+          </div>
         </div>
       )
     }}
